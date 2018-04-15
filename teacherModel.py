@@ -3,9 +3,9 @@ import xmltodict
 import time
 from flask import Flask, request
 from hashlib import sha1
+
 # 创建Flask应用程序实例
 app = Flask(__name__)
-
 
 WECHAT_TOKEN = 'PYTHON26'
 
@@ -103,6 +103,7 @@ def wechat():
             return res_data
         else:
             return ''
+
 
 if __name__ == '__main__':
     # 运行开发web服务器
